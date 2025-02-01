@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7DBC8523-0048-49C1-A561-46330B173FB0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Replenish_ReactorRods</RootNamespace>
+    <AssemblyName>Replenish ReactorRods</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <LangVersion>preview</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Buildable\DepletedReactorRod Recharger.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Qpatch.cs" />
+    <Compile Include="Recipe\RefreshedReactorRod.cs" />
+    <Compile Include="RewrittenRamuneLibsn\Core\Variables.cs" />
+    <Compile Include="RewrittenRamuneLibsn\Utils\DialogUtils.cs" />
+    <Compile Include="RewrittenRamuneLibsn\Utils\ImageUtils.cs" />
+    <Compile Include="RewrittenRamuneLibsn\Utils\JsonUtils.cs" />
+    <Compile Include="RewrittenRamuneLibsn\Utils\LoggerUtils.cs" />
+    <Compile Include="RewrittenRamuneLibsn\Utils\PatchingUtils.cs" />
+    <Compile Include="RewrittenRamuneLibsn\Utils\PingUtils.cs" />
+    <Compile Include="RewrittenRamuneLibsn\Utils\PrefabUtils.cs" />
+    <Compile Include="RewrittenRamuneLibsn\Utils\VehicleUtils.cs" />
+    <Compile Include="Test.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="BepInEx.BaseLib">
+      <Version>5.4.21</Version>
+    </PackageReference>
+    <PackageReference Include="BepInEx.Core">
+      <Version>5.4.21</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies">
+      <Version>1.0.3</Version>
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Subnautica.Nautilus">
+      <Version>1.0.0-pre.33</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\..\..\..\home\cookay\.steam\steam\steamapps\common\Subnautica\BepInEx\core\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\..\..\home\cookay\.steam\steam\steamapps\common\Subnautica\publicized_assemblies\Assembly-CSharp_publicized.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>..\..\..\..\..\..\home\cookay\.steam\steam\steamapps\common\Subnautica\publicized_assemblies\Assembly-CSharp-firstpass_publicized.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>..\..\..\..\..\..\home\cookay\.nuget\packages\bepinex.baselib\5.4.21\lib\net35\BepInEx.dll</HintPath>
+    </Reference>
+    <Reference Include="FMODUnity">
+      <HintPath>..\..\..\..\..\..\home\cookay\Local\Subnautica.GameLibs.71288.0.0-r.0\lib\net472\FMODUnity.dll</HintPath>
+    </Reference>
+    <Reference Include="Nautilus">
+      <HintPath>..\..\..\..\..\..\home\cookay\.steam\steam\steamapps\common\Subnautica\BepInEx\plugins\Nautilus\Nautilus.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\Backup again\source\repos\CrashattackChallange\CrashattackChallange\bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Addressables">
+      <HintPath>..\..\..\..\..\..\home\cookay\.steam\steam\steamapps\common\Subnautica\Subnautica_Data\Managed\Unity.Addressables.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\..\home\cookay\.steam\steam\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\..\..\Backup again\source\repos\CrashattackChallange\CrashattackChallange\bin\Debug\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\..\..\home\cookay\.steam\steam\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>..\..\..\..\..\..\home\cookay\Local\UnityEngine.Modules.2019.4.36\lib\net45\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>..\..\..\Backup again\source\repos\CrashattackChallange\CrashattackChallange\bin\Debug\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RewrittenRamuneLibsn\.idea\.idea.RewrittenRamuneLibsn.dir\.idea\.gitignore" />
+    <Content Include="RewrittenRamuneLibsn\.idea\.idea.RewrittenRamuneLibsn.dir\.idea\encodings.xml" />
+    <Content Include="RewrittenRamuneLibsn\.idea\.idea.RewrittenRamuneLibsn.dir\.idea\indexLayout.xml" />
+    <Content Include="RewrittenRamuneLibsn\.idea\.idea.RewrittenRamuneLibsn.dir\.idea\projectSettingsUpdater.xml" />
+    <Content Include="RewrittenRamuneLibsn\.idea\.idea.RewrittenRamuneLibsn.dir\.idea\vcs.xml" />
+    <Content Include="RewrittenRamuneLibsn\.idea\.idea.RewrittenRamuneLibsn.dir\.idea\workspace.xml" />
+    <Content Include="RewrittenRamuneLibsn\RewrittenRamuneLib.projitems" />
+    <Content Include="RewrittenRamuneLibsn\RewrittenRamuneLib.shproj" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

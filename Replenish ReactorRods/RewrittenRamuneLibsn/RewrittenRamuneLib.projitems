@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>ebb8a44e-c589-4f9b-bfe8-209603e19eea</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>RamuneLib</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Core\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Extensions\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Piracy\Monos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)core\Variables.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\CustomPrefabExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)extensions\GameObjectExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)extensions\RendererExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Miscellaneous\Attributes.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Miscellaneous\GlobalReferences.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Initializer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)piracy\monos\NightyNight.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)piracy\Patches\BreakableResource.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)piracy\Patches\Charger.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)piracy\Patches\LiveMixin.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Piracy\Patches\SoundSystem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Piracy\PiracyVariables.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)piracy\Patches\Player.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)piracy\Piracy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Piracy\Monos\PirateTunes.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)piracy\Core.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)utils\DialogUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)utils\PingUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\PatchingUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\ImageUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\JsonUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\LoggerUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\PrefabUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\VehicleUtils.cs" />
+  </ItemGroup>
+</Project>
